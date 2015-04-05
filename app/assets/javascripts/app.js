@@ -1,5 +1,4 @@
-var upnote = angular.module('upnote',[
-])
+var upnote = angular.module('upnote',['ngMaterial'])
 
 $(document).ready(function() {
   

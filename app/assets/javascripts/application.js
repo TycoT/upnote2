@@ -16,6 +16,9 @@
 
 
 //= require angular/angular
+//= require angular-material/angular-material
+//= require angular-animate/angular-animate
+//= require angular-aria/angular-aria
 //= require angular-route/angular-route
 //= require angular-resource/angular-resource
 //= require webcomponentsjs/webcomponents

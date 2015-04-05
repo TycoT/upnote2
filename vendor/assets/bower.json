@@ -5,6 +5,7 @@
     "angular-route": "latest",
     "angular-resource": "latest",
     "angular-mocks": "latest",
+    "angular-material": "latest",
     "webcomponentsjs": "latest",
     "polymer": "git://github.com/Polymer/polymer",
     "polymer-core-elements": "git://github.com/Polymer/core-elements",
