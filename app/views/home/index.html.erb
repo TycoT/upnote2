@@ -1,13 +1,18 @@
-<div class="container-fluid" ng-app="upnote">
-  <div class="panel panel-success">
-    <div class="panel-heading">
-      <h1 ng-if="name">Hello, {{name}}</h1>
-    </div>
-    <div class="panel-body">
-      <form class="form-inline">
-        <div class="form-group">
-          <input class="form-control" type="text" placeholder="Enter your name" autofocus ng-model="name">
-        </div>
+<div class="login-background" ng-app="upnote">
+  <div class="login-card">
+    <div class="login">
+      <img class="logo" src="/images/upnote-logo-dark.png">
+      <form class="form">
+        <md-input-container>
+          <label>Username</label>
+          <input type="text" ng-model="formName" required>
+        </md-input-container>
+        <md-input-container>
+          <label>Password</label>
+          <input type="password" ng-model="formPassword" required>
+        </md-input-container>
+        <button ng-show="formName && formPassword" type="button" class="login__submit">Sign in</button>
+        <p class="login__signup">Don't have an account? &nbsp;<a>Sign up</a></p>
       </form>
     </div>
   </div>

@@ -6,10 +6,13 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= html_import_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/angular-material/0.8.3/angular-material.css' rel='stylesheet' type='text/css'>
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/angular-material/0.8.3/angular-material.min.css' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
 <%= yield %>
-
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/0.8.3/angular-material.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/0.8.3/angular-material.min.js"></script>
 </body>
 </html>
