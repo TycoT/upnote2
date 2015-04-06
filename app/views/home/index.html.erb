@@ -2,16 +2,16 @@
   <div class="login-card">
     <div class="login">
       <img class="logo" src="/images/upnote-logo-dark.png">
-      <form class="form">
+      <form class="login__form">
         <md-input-container>
           <label>Username</label>
-          <input type="text" ng-model="formName" required>
+          <input type="text" ng-model="formName">
         </md-input-container>
         <md-input-container>
           <label>Password</label>
-          <input type="password" ng-model="formPassword" required>
+          <input type="password" ng-model="formPassword">
         </md-input-container>
-        <button ng-show="formName && formPassword" type="button" class="login__submit">Sign in</button>
+        <button  type="button" class="login__submit">Sign in</button>
         <p class="login__signup">Don't have an account? &nbsp;<a>Sign up</a></p>
       </form>
     </div>
