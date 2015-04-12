@@ -45,7 +45,8 @@ html, body {
 }
 
 .login-background {
-	background-image: url("http://i.imgur.com/UP7fWfg.jpg");
+	background-image: url("https://farm9.staticflickr.com/8790/16439179244_baa223375a_h.jpg");
+	background-image: url("http://i.imgur.com/9L89ShH.jpg");
 	background-size: cover;
 	position: relative;
 	height:100%;
@@ -76,6 +77,8 @@ html, body {
   }
 
   &__submit {
+    margin:auto !important;
+  	text-align:center;
     position: relative;
     width: 80%;
     height: 3rem;
@@ -102,6 +105,7 @@ html, body {
       border-left: none;
       border-bottom: none;
       animation: rotate 0.5s infinite linear;
+      -webkit-animation: rotate 0.5s infinite linear;//chrome
       transition: opacity 0.1s 0.4s;
       opacity: 0;
     }
@@ -150,6 +154,7 @@ html, body {
   background: rgba(0,0,0,0.4);
   transform: scale(0);
   animation: animRipple 0.4s;
+  -webkit-animation: animRipple 0.4s;
   border-radius: 50%;
 }
 
@@ -159,23 +164,20 @@ html, body {
 	padding-top:20px;
 }
 
-.form {
+.login__form {
 	font-family: $font;
-	width:70%;
-	margin:auto;
-	text-align:center;
 }
 
-md-input-container input{
-
+.login__form md-input-container input{
+	font-size:1.5rem;
 	text-align:center;
+	margin:auto !important;
+	width:80%;
 	color:#fff !important;
 }
 
-.form label {
-	font-weight:bold !important;
-	font-size:24px !important;
-	color: $color-pink !important;
+.md-input-focused .md-input{
+	border-color:$color-pink !important;
 }
 
 
@@ -184,7 +186,7 @@ md-input-container input{
 
 @-webkit-keyframes animRipple {
   to {
-    transform: scale(3.5);
+    -webkit-transform: scale(3.5);
     opacity: 0;
   }
 }
@@ -198,7 +200,7 @@ md-input-container input{
 
 @-webkit-keyframes rotate {
   to {
-    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
   }
 }
 
@@ -218,3 +220,7 @@ md-input-container input{
     stroke-dashoffset: 0;
   }
 }
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }

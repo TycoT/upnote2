@@ -2,14 +2,12 @@
   <div class="login-card">
     <div class="login">
       <img class="logo" src="/images/upnote-logo-dark.png">
-      <form class="login__form">
-        <md-input-container>
-          <label>Username</label>
-          <input type="text" ng-model="formName">
+      <form layout="column" class="login__form">
+        <md-input-container md-no-float>
+          <input type="text" ng-model="formName" placeholder="Username">
         </md-input-container>
-        <md-input-container>
-          <label>Password</label>
-          <input type="password" ng-model="formPassword">
+        <md-input-container md-no-float>
+          <input type="password" ng-model="formPassword" placeholder="Password">
         </md-input-container>
         <button  type="button" class="login__submit">Sign in</button>
         <p class="login__signup">Don't have an account? &nbsp;<a>Sign up</a></p>
